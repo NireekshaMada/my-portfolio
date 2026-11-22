@@ -2286,6 +2286,17 @@ html.panel-open {
   font-size: 0.95rem;
 }
 
+.contact-form__status {
+  opacity: 0;
+  transform: translateY(0.25rem);
+  transition: opacity var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+
+.contact-form__status[data-state] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .contact-form__note {
   padding: var(--space-3) var(--space-4);
   border: 1px dashed var(--card-hover-border);
