@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume | Nireeksha Mada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { min-height: 100vh; background: #17130F; color: #F6F4EF; font-family: "Inter", system-ui, sans-serif; line-height: 1.65; }
+    .wrap { width: 100%; margin: 0 auto; padding: 1.25rem clamp(1rem, 3vw, 3rem) 2rem; }
+    .back { display: inline-block; font-size: 0.95rem; font-weight: 500; color: #F6F4EF; text-decoration: none; padding-bottom: 0.15rem; border-bottom: 1px solid #C4572B; }
+    .back:hover { color: #C4572B; }
+    .resume-preview { width: 100%; aspect-ratio: 612 / 792; max-height: none; margin-top: 1.25rem; overflow: hidden; border: 1px solid #504337; border-radius: 0.5rem; background: #FFFFFF; }
+    .resume-preview iframe { display: block; width: 100%; height: 100%; border: 0; }
+    .resume-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+    .resume-action { display: inline-flex; min-height: 3rem; align-items: center; justify-content: center; padding: 0.9rem 1.7rem; border: 1px solid transparent; border-radius: 999px; font-size: 0.95rem; font-weight: 500; line-height: 1; text-decoration: none; transition: background-color 0.3s cubic-bezier(0.22, 1, 0.36, 1), color 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s cubic-bezier(0.22, 1, 0.36, 1), transform 0.3s cubic-bezier(0.22, 1, 0.36, 1); }
+    .resume-action:focus-visible { outline: 2px solid #C4572B; outline-offset: 4px; }
+    .resume-action--primary { background: #A8461F; color: #FFFFFF; }
+    .resume-action--outline { border-color: #F6F4EF; color: #F6F4EF; }
+    @media (hover: hover) and (pointer: fine) {
+      .resume-action:hover { transform: translateY(-2px); }
+      .resume-action--primary:hover { background: #C4572B; }
+      .resume-action--outline:hover { background: #F6F4EF; color: #17130F; }
+    }
+    @media (max-width: 32rem) {
+      .wrap { padding: 1rem 1rem 2rem; }
+      .resume-preview { aspect-ratio: 612 / 792; }
+      .resume-actions { flex-direction: column; align-items: stretch; }
+      .resume-action { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .resume-action { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <a class="back" href="index.html">Back to Home</a>
+    <section aria-label="Resume preview and download">
+      <div class="resume-preview">
+        <iframe src="assets/resume/nireeksha-mada-resume.pdf#toolbar=0&amp;navpanes=0&amp;view=FitH" title="Nireeksha Mada resume PDF"></iframe>
+      </div>
+      <div class="resume-actions" role="group" aria-label="Resume actions">
+        <a class="resume-action resume-action--outline" href="assets/resume/nireeksha-mada-resume.pdf" download="Nireeksha-Mada-Resume.pdf">Download Resume</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

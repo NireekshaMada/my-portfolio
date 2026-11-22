@@ -1,0 +1,12 @@
+# Temporary inspection files
+assets/images/certificates/.inspect/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Operating system files
+Thumbs.db
+.DS_Store
+desktop.ini
